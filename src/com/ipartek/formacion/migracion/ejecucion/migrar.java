@@ -17,9 +17,8 @@ public class migrar {
 	 * INDICAR AQUÍ RUTA ABSOLUTA DONDE ESTÁ EL TXT QUE QUIERES IMPORTAR 
 	 */
 	
-	//static final String PATH_FICHERO = "C://Desarrollo//Workspace//migracion//fichero//persona.txt";
-	static final String PATH_FICHERO = "C://Users//Tzimize//workspace//migracion//fichero//personas.txt";
-	static final String PATH_FICHERO_RES = "C://Users//Tzimize//workspace//migracion//fichero//personas_migradas.txt";
+	static final String PATH_FICHERO = "C://Desarrollo//Workspace//migracion//fichero//personas.txt";
+	static final String PATH_FICHERO_RES = "C://Desarrollo//Workspace//migracion//fichero//personas_migradas.txt";
 		
 	//Esta aplicación de migrado es un unico main ejecutable.
 	public static void main(String[] args) {
