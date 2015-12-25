@@ -6,16 +6,16 @@ import java.sql.SQLException;
 
 /**
  * Clase que permite conectar con la base de datos
- * 
  * @author chenao
- *
  */
+ 
 public class conexion {
 	/** Parametros de conexion */
 	static String bd = "iparsex";
 	static String login = "root";
 	static String password = "";
-	static String url = "jdbc:mysql://localhost/" + bd;
+	//metemos utf8, la BBDD la acepta, solo hay que enviarla
+	static String url = "jdbc:mysql://localhost/"+bd+"?characterEncoding=utf-8";
 
 	Connection connection = null;
 
