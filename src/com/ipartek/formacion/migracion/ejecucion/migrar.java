@@ -130,9 +130,9 @@ public class migrar {
 					contador_no++;//Es el contador de fracasos para hacer el informe
 				}
 				
-				System.out.println(contador_si);
-				System.out.println(contador_no);
-				System.out.println(contador_fallos);
+				//System.out.println(contador_si);
+				//System.out.println(contador_no);
+				//System.out.println(contador_fallos);
 				
 			}//Fin del while
 			
@@ -242,12 +242,11 @@ public class migrar {
 	//para dejar constancia de lo que NO se ha migrado por ser demasiado para nuestras columnas
 	private static void archivo (PreparedStatement pst) throws IOException { 
 
-		System.out.println(pst);
-		String texto = pst.toString();
+		//System.out.println(pst);
 		BufferedWriter out = null;   
 		try {   
 			out = new BufferedWriter(new FileWriter(PATH+FICHERO_SQL, true));   
-			out.write(texto);   
+			out.write(pst.toString());   
 			out.newLine();
 			out.write("-----------------------------------------------------");   
 			out.newLine();
