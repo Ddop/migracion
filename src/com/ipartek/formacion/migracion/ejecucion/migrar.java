@@ -82,8 +82,8 @@ public class migrar {
 						// No nos responsabilizamos de datos corruptos ni
 						// incompletos, ni nada, todo lo que tenga formato 
 						// de 7 campos, lo cogemos. Estamos migrando, no nos
-						//podemos responsabilizar de que los datos sean reales,
-						//etc
+						// podemos responsabilizar de que los datos sean reales,
+						// etc
 
 						String sql = "INSERT INTO `iparsex`.`persona` (`nombre`, `dni`, `observaciones`, `mail`) VALUES (?, ?, ?, ?);";
 						PreparedStatement pst = con.getConnection().prepareStatement(sql);
