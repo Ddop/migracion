@@ -94,7 +94,7 @@ public class migrar {
 					}
 					//DNI
 					pst.setString(2, aCampos[5]);
-					if (aCampos[5].length() >= 11) {
+					if (aCampos[5].length() >= 10) {
 						contador_columnas++;
 						autorizado = false;
 					}
