@@ -138,9 +138,9 @@ public class migrar {
 										// el informe
 					}
 
-					 System.out.println(contador_si);
-					 System.out.println(contador_no);
-					 System.out.println(contador_fallos);
+					 System.out.println("Lineas migradas: "+contador_si);
+					 System.out.println("Lineas que no cumplen formato: "+contador_no);
+					 System.out.println("Lineas demasiado largas para insertar: "+contador_fallos);
 
 				} catch (Exception e) {
 					e.printStackTrace();
