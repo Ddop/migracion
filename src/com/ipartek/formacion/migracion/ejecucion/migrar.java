@@ -73,7 +73,7 @@ public class migrar {
 
 				try {
 
-					// la troceamos para trabajar con sus campos
+					// la spliteamos para trabajar con sus campos
 					String[] aCampos = linea.split(",");
 
 					// 1// SOLO ATENDEMOS FILAS CORRECTAS (7 campos)
@@ -145,7 +145,7 @@ public class migrar {
 
 				} catch (Exception e) {
 					e.printStackTrace();
-					// Atentos por si peta el splitting, pero pasamos
+					// Atentos por si peta algo en los pases 1 a 3 (la migración en sí), pero pasamos
 				}
 
 			} // Fin del while
