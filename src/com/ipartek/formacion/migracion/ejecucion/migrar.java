@@ -85,7 +85,7 @@ public class migrar {
 						// podemos responsabilizar de que los datos sean reales,
 						// etc
 
-						String sql = "INSERT INTO `iparsex`.`persona` (`nombre`, `dni`, `observaciones`, `mail`) VALUES (?, ?, ?, ?);";
+						String sql = "INSERT INTO `persona` (`nombre`, `dni`, `observaciones`, `mail`) VALUES (?, ?, ?, ?);";
 						PreparedStatement pst = con.getConnection().prepareStatement(sql);
 
 						// 2// LOS CAMPOS TROCEADOS LOS EMBEBEMOS EN LA SQL
