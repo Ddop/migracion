@@ -117,11 +117,13 @@ public class migrar {
 						}
 
 						// Miramos si algún campo ha dado problema de longitud,
-						// Si el flag es true, se lanza la insert
-						if (autorizado == true) {
+						// Si el flag es true, 
+						if ( autorizado == true ){
+							//,lanzamos la insert, siendo el resultado insertado de 1,
+							//y solo 1, la propia condición para contar un éxito
+							if (pst.executeUpdate() == 1)
 							contador_si++;// Es el contador de éxitos para hacer
 											// el informe
-							pst.executeUpdate();
 							// Si no, archivamos sql
 						} else {
 							contador_fallos++;
